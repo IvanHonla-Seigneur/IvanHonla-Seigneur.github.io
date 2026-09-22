@@ -79,7 +79,7 @@ color: #00f5a0;
 .actions-hero {
 display: flex;
 align-items: center;
-gap: 40px;
+gap: 18px;
 flex-wrap: wrap;
 }
 .liens-sociaux a {
@@ -93,6 +93,10 @@ border-radius: 8px;
 color: white;
 text-decoration: none;
 font-size: 18px;
+transition: transform 0.2s ease;
+}
+.liens-sociaux a:hover {
+transform: scale(1.15);
 }
 .liens-sociaux svg {
 width: 18px;
@@ -103,7 +107,7 @@ display: block;
 display: flex;
 flex-direction: column;
 justify-content: center;
-gap: 24px;
+gap: 36px;
 flex: 1 1 320px;
 max-width: 420px;
 }
@@ -112,7 +116,7 @@ text-decoration: none;
 padding: 22px 40px;
 border-radius: 50px;
 font-weight: bold;
-font-size: 17px;
+font-size: 19px;
 color: #111827;
 text-align: center;
 position: relative;
@@ -132,24 +136,31 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 25
 pointer-events: none;
 }
 .bouton:hover {
-transform: translateY(-3px);
+transform: translateY(-3px) scale(1.05);
 box-shadow: 0 14px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 .contact-btn {
 border: 2px solid transparent;
 background: linear-gradient(#0a0e1a, #0a0e1a) padding-box,
-linear-gradient(90deg, #7c3aed, #ff2d95) border-box;
+linear-gradient(90deg, #7c3aed, #ff2d95, #7c3aed) border-box;
+background-size: 100% 100%, 200% 100%;
+background-position: 0 0, 0% 0;
 color: #ffffff;
 padding: 16px 36px;
 border-radius: 50px;
 text-decoration: none;
 font-weight: bold;
-font-size: 16px;
+font-size: 17px;
 text-transform: uppercase;
 letter-spacing: 0.5px;
 display: inline-flex;
 align-items: center;
 gap: 10px;
+transition: background-position 0.5s ease, transform 0.2s ease;
+}
+.contact-btn:hover {
+background-position: 0 0, 100% 0;
+transform: scale(1.05);
 }
 .contact-btn svg {
 width: 20px;
