@@ -19,9 +19,9 @@ header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-max-width: 1400px;
+max-width: 1600px;
 margin: 0 auto;
-padding: 25px 60px;
+padding: 25px clamp(24px, 6vw, 120px);
 flex-wrap: wrap;
 }
 .logo {
@@ -46,9 +46,9 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 gap: 40px;
-max-width: 1400px;
+max-width: 1600px;
 margin: 0 auto;
-padding: 40px 60px;
+padding: 40px clamp(24px, 6vw, 120px);
 flex-wrap: wrap;
 }
 .hero {
@@ -165,8 +165,7 @@ height: 18px;
 <div class="hero">
 <p class="intro">
 Bonjour,<br>
-Je suis <span class="nom">IVAN HONLA-SEIGNEUR</span>,<br>
-spécialiste en <span class="metier">Marketing &amp; Data</span>.
+Je suis <span class="nom">IVAN HONLA-SEIGNEUR</span>, spécialiste en <span class="metier">Marketing &amp; Data</span>.
 </p>
 
 <div class="liens-sociaux">
