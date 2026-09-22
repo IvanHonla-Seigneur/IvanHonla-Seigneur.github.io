@@ -94,16 +94,23 @@ background-color: #2563eb;
 background-color: #16a34a;
 }
 .contact-btn {
-border: 2px solid #e5e7eb;
-background: transparent;
-color: #e5e7eb;
+border: 2px solid transparent;
+background: linear-gradient(#0a0e1a, #0a0e1a) padding-box,
+linear-gradient(90deg, #6366f1, #ec4899) border-box;
+color: #ffffff;
 padding: 13px 33px;
 border-radius: 50px;
 text-decoration: none;
 font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 0.5px;
 display: inline-flex;
 align-items: center;
-gap: 8px;
+gap: 10px;
+}
+.contact-btn svg {
+width: 18px;
+height: 18px;
 }
 </style>
 </head>
@@ -133,7 +140,15 @@ specialise en <span class="metier">Marketing &amp; Data</span>.
 <div class="boutons-hero">
 <a href="marketing.html" class="bouton marketing">Mes realisations Marketing</a>
 <a href="data.html" class="bouton data">Mes realisations Data</a>
-<a href="#contact" class="contact-btn">Me contacter</a>
+<a href="#contact" class="contact-btn">
+Me contacter
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="9" cy="7" r="4"></circle>
+<path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"></path>
+<line x1="17" y1="8" x2="22" y2="8"></line>
+<line x1="17" y1="12" x2="22" y2="12"></line>
+</svg>
+</a>
 </div>
 </div>
 
