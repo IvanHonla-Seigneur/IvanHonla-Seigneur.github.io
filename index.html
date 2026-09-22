@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #0a0e1a;
+color: #e5e7eb;
+scroll-behavior: smooth;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 60px;
+flex-wrap: wrap;
+}
+.logo {
+font-size: 22px;
+font-weight: bold;
+color: #34d399;
+letter-spacing: 1px;
+}
+nav a {
+color: #e5e7eb;
+text-decoration: none;
+margin-left: 30px;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 0.5px;
+}
+nav a:hover {
+color: #34d399;
+}
+.hero {
+padding: 60px;
+max-width: 700px;
+}
+.hero p.intro {
+font-size: 28px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.hero .nom {
+color: #ec4899;
+}
+.hero .metier {
+color: #34d399;
+}
+.liens-sociaux {
+margin: 25px 0;
+}
+.liens-sociaux a {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 42px;
+height: 42px;
+background-color: #ec4899;
+border-radius: 8px;
+margin-right: 12px;
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+.boutons-hero {
+display: flex;
+gap: 20px;
+margin-top: 30px;
+flex-wrap: wrap;
+}
+.bouton {
+text-decoration: none;
+padding: 15px 35px;
+border-radius: 8px;
+font-weight: bold;
+color: white;
+transition: opacity 0.2s;
+}
+.bouton:hover {
+opacity: 0.85;
+}
+.marketing {
+background-color: #2563eb;
+}
+.data {
+background-color: #16a34a;
+}
+.contact-btn {
+border: 2px solid #34d399;
+background: transparent;
+color: #34d399;
+padding: 13px 33px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">IVAN HONLA-SEIGNEUR</div>
+<nav>
+<a href="#apropos">A PROPOS</a>
+<a href="#experiences">EXPERIENCES</a>
+<a href="#competences">COMPETENCES</a>
+<a href="#education">EDUCATION</a>
+</nav>
+</header>
+
+<div class="hero">
+<p class="intro">
+Bonjour,<br>
+Je suis <span class="nom">IVAN HONLA-SEIGNEUR</span>,<br>
+specialise en <span class="metier">Marketing &amp; Data</span>.
+</p>
+
+<div class="liens-sociaux">
+<a href="https://www.linkedin.com/" target="_blank">in</a>
+</div>
+
+<div class="boutons-hero">
+<a href="marketing.html" class="bouton marketing">Mes realisations Marketing</a>
+<a href="data.html" class="bouton data">Mes realisations Data</a>
+<a href="#contact" class="contact-btn">Me contacter</a>
+</div>
+</div>
+
+</body>
+</html>
