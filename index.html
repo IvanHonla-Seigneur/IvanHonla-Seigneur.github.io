@@ -10,15 +10,17 @@ box-sizing: border-box;
 }
 body {
 margin: 0;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
 font-family: Arial, sans-serif;
 background-color: #0a0e1a;
-background-image: radial-gradient(ellipse 900px 600px at 85% 0%, rgba(139, 46, 231, 0.22), transparent 60%);
-background-repeat: no-repeat;
 color: #e5e7eb;
 scroll-behavior: smooth;
+}
+.hero-section {
+display: flex;
+flex-direction: column;
+min-height: 85vh;
+background-image: radial-gradient(ellipse 900px 600px at 85% 0%, rgba(139, 46, 231, 0.22), transparent 60%);
+background-repeat: no-repeat;
 }
 header {
 display: flex;
@@ -42,7 +44,7 @@ color: #e5e7eb;
 text-decoration: none;
 margin-left: 30px;
 font-size: 17px;
-font-weight: bold;
+font-weight: 500;
 letter-spacing: 0.5px;
 }
 nav a:hover {
@@ -65,7 +67,7 @@ max-width: 620px;
 flex: 1 1 420px;
 }
 .hero p.intro {
-font-size: 50px;
+font-size: 42px;
 font-weight: 800;
 line-height: 1.25;
 margin-bottom: 32px;
@@ -166,10 +168,70 @@ transform: scale(1.05);
 width: 20px;
 height: 20px;
 }
+.about-section {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 60px;
+max-width: 1800px;
+margin: 0 auto;
+padding: 30px clamp(24px, 12vw, 220px) 100px;
+flex-wrap: wrap;
+}
+.about-text {
+flex: 1 1 420px;
+max-width: 600px;
+}
+.about-text .kicker {
+color: #00f5a0;
+font-weight: 800;
+font-size: 28px;
+margin-bottom: 20px;
+}
+.about-text p {
+font-size: 17px;
+line-height: 1.8;
+color: #cbd5e1;
+}
+.about-image-row {
+display: flex;
+align-items: center;
+gap: 24px;
+flex: 1 1 320px;
+justify-content: center;
+}
+.about-image {
+width: 320px;
+height: 380px;
+border-radius: 12px;
+background: #14172a;
+border: 1px dashed rgba(255, 255, 255, 0.2);
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #6b7280;
+font-size: 14px;
+padding: 20px;
+}
+.about-label {
+writing-mode: vertical-rl;
+transform: rotate(180deg);
+font-weight: 800;
+letter-spacing: 2px;
+font-size: 14px;
+color: #e5e7eb;
+padding-left: 16px;
+border-left: 1px solid rgba(255, 255, 255, 0.15);
+height: 380px;
+display: flex;
+align-items: center;
+}
 </style>
 </head>
 <body>
 
+<div class="hero-section">
 <header>
 <div class="logo">IVAN HONLA-SEIGNEUR</div>
 <nav>
@@ -211,6 +273,22 @@ Me contacter
 <a href="data.html" class="bouton">Mes realisations Data</a>
 </div>
 </div>
+</div>
+
+<section id="apropos" class="about-section">
+<div class="about-text">
+<p class="kicker">Qui suis-je ?</p>
+<p>
+[Texte de présentation à remplacer : quelques phrases sur ton parcours,
+ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
+</p>
+</div>
+
+<div class="about-image-row">
+<div class="about-image">Ta photo ici</div>
+<div class="about-label">À PROPOS DE MOI</div>
+</div>
+</section>
 
 </body>
 </html>
