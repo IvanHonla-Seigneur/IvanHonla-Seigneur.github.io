@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réalisations Marketing — Ivan Honla Seigneur</title>
+<script>
+if ('scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+if (window.location.hash) {
+history.replaceState(null, '', window.location.pathname + window.location.search);
+}
+window.scrollTo(0, 0);
+window.addEventListener('load', () => window.scrollTo(0, 0));
+</script>
+
+<style>
+* {
+box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #0a0e1a;
+color: #e5e7eb;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 2000px;
+width: 100%;
+margin: 0 auto;
+padding: 25px clamp(24px, 12vw, 220px);
+flex-wrap: wrap;
+}
+.logo {
+font-size: 28px;
+font-weight: bold;
+color: #00f5a0;
+letter-spacing: 1px;
+text-shadow: 0 0 18px rgba(0, 245, 160, 0.45);
+text-decoration: none;
+}
+nav a {
+color: #e5e7eb;
+text-decoration: none;
+margin-left: 30px;
+font-size: 17px;
+font-weight: 500;
+letter-spacing: 0.5px;
+display: inline-block;
+transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
+}
+nav a:hover {
+color: #00f5a0;
+text-shadow: 0 0 14px rgba(0, 245, 160, 0.5);
+transform: scale(1.12);
+}
+.page-hero {
+max-width: 2000px;
+margin: 0 auto;
+padding: 40px clamp(24px, 12vw, 220px) 20px;
+text-align: center;
+}
+.section-badge-wrap {
+display: flex;
+justify-content: center;
+margin-bottom: 24px;
+}
+.section-badge {
+padding: 14px 32px;
+background: rgba(124, 58, 237, 0.15);
+border: 1px solid rgba(124, 58, 237, 0.4);
+border-radius: 8px;
+color: #e5e7eb;
+font-size: clamp(18px, 1.2vw, 25px);
+font-weight: 700;
+}
+.page-hero p {
+max-width: 700px;
+margin: 0 auto;
+font-size: 18px;
+line-height: 1.7;
+color: #9ca3af;
+}
+.projects-list {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px clamp(24px, 8vw, 160px) 140px;
+display: flex;
+flex-direction: column;
+gap: 48px;
+}
+.project-block {
+position: relative;
+border-radius: 24px;
+padding: 48px clamp(28px, 5vw, 64px);
+overflow: hidden;
+border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.project-block .project-tag {
+display: inline-block;
+padding: 8px 18px;
+border-radius: 50px;
+background: rgba(255, 255, 255, 0.12);
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.project-block h2 {
+margin: 0 0 16px;
+font-size: clamp(24px, 3vw, 34px);
+font-weight: 800;
+}
+.project-block p {
+max-width: 620px;
+font-size: 17px;
+line-height: 1.75;
+color: rgba(255, 255, 255, 0.85);
+margin: 0 0 28px;
+}
+.project-visual {
+border: 1px dashed rgba(255, 255, 255, 0.35);
+border-radius: 16px;
+min-height: 260px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 30px;
+font-size: 14px;
+color: rgba(255, 255, 255, 0.6);
+background: rgba(0, 0, 0, 0.15);
+}
+.project-block.theme-1 {
+background: linear-gradient(135deg, #4c1d95, #7c3aed 55%, #db2777);
+}
+.project-block.theme-1 .project-tag {
+background: rgba(0, 0, 0, 0.25);
+}
+.project-block.theme-2 {
+background: linear-gradient(135deg, #064e3b, #059669 55%, #34d399);
+}
+.project-block.theme-2 .project-tag {
+background: rgba(0, 0, 0, 0.25);
+}
+.project-block.theme-3 {
+background: linear-gradient(135deg, #7c2d12, #ea580c 55%, #fbbf24);
+}
+.project-block.theme-3 .project-tag {
+background: rgba(0, 0, 0, 0.25);
+}
+.site-footer {
+position: relative;
+border-top: 1px solid rgba(255, 255, 255, 0.08);
+padding: 28px clamp(24px, 12vw, 220px);
+max-width: 2000px;
+margin: 0 auto;
+}
+.site-footer::before {
+content: "";
+position: absolute;
+top: -1px;
+left: 50%;
+transform: translateX(-50%);
+width: 55%;
+height: 2px;
+background: linear-gradient(90deg, transparent, #8b5cf6 50%, transparent);
+filter: blur(4px);
+}
+.site-footer p {
+margin: 0;
+font-size: 15px;
+color: #e5e7eb;
+}
+.site-footer .footer-name {
+color: #00f5a0;
+font-weight: 600;
+}
+.scroll-top-btn {
+position: fixed;
+right: 30px;
+bottom: 30px;
+width: 54px;
+height: 54px;
+border-radius: 50%;
+border: none;
+background: linear-gradient(135deg, #7c3aed, #ff2d95);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #ffffff;
+cursor: pointer;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+opacity: 0;
+visibility: hidden;
+transform: translateY(20px);
+transition: opacity 0.3s ease, transform 0.2s ease, visibility 0.3s ease, box-shadow 0.2s ease;
+z-index: 999;
+}
+.scroll-top-btn.visible {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+.scroll-top-btn:hover {
+transform: scale(1.15);
+box-shadow: 0 14px 30px rgba(0, 0, 0, 0.5);
+}
+.scroll-top-btn.visible:active {
+transform: scale(0.92);
+}
+.scroll-top-btn svg {
+width: 24px;
+height: 24px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<a href="index.html" class="logo">Ivan</a>
+<nav>
+<a href="index.html">← Retour à l'accueil</a>
+</nav>
+</header>
+
+<div class="page-hero">
+<div class="section-badge-wrap">
+<div class="section-badge">Mes réalisations Marketing</div>
+</div>
+<p>[Texte d'intro à remplacer : une ou deux phrases présentant cette sélection de projets marketing.]</p>
+</div>
+
+<div class="projects-list">
+
+<div class="project-block theme-1">
+<span class="project-tag">[Entreprise / mission]</span>
+<h2>[Titre du projet 1]</h2>
+<p>[Description à remplacer : objectif du projet, ce que tu as fait concrètement, les outils utilisés, les résultats obtenus.]</p>
+<div class="project-visual">[Visuel à venir — capture d'écran, maquette ou export de campagne]</div>
+</div>
+
+<div class="project-block theme-2">
+<span class="project-tag">[Entreprise / mission]</span>
+<h2>[Titre du projet 2]</h2>
+<p>[Description à remplacer : objectif du projet, ce que tu as fait concrètement, les outils utilisés, les résultats obtenus.]</p>
+<div class="project-visual">[Visuel à venir — capture d'écran, maquette ou export de campagne]</div>
+</div>
+
+<div class="project-block theme-3">
+<span class="project-tag">[Entreprise / mission]</span>
+<h2>[Titre du projet 3]</h2>
+<p>[Description à remplacer : objectif du projet, ce que tu as fait concrètement, les outils utilisés, les résultats obtenus.]</p>
+<div class="project-visual">[Visuel à venir — capture d'écran, maquette ou export de campagne]</div>
+</div>
+
+</div>
+
+<footer class="site-footer">
+<p>&copy; Développé par <span class="footer-name">Ivan HONLA SEIGNEUR</span></p>
+</footer>
+
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Retour en haut de la page">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<line x1="12" y1="19" x2="12" y2="5"></line>
+<polyline points="5 12 12 5 19 12"></polyline>
+</svg>
+</button>
+
+<script>
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', () => {
+if (window.scrollY > 60) {
+scrollTopBtn.classList.add('visible');
+} else {
+scrollTopBtn.classList.remove('visible');
+}
+});
+scrollTopBtn.addEventListener('click', () => {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>
