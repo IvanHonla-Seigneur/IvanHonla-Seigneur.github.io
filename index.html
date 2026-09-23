@@ -18,7 +18,7 @@ scroll-behavior: smooth;
 .hero-section {
 display: flex;
 flex-direction: column;
-min-height: 96vh;
+min-height: clamp(620px, 88vh, 820px);
 background-image: radial-gradient(ellipse 900px 600px at 85% 0%, rgba(139, 46, 231, 0.22), transparent 60%);
 background-repeat: no-repeat;
 }
@@ -26,7 +26,7 @@ header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-max-width: 1800px;
+max-width: 2000px;
 width: 100%;
 margin: 0 auto;
 padding: 25px clamp(24px, 12vw, 220px);
@@ -55,7 +55,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 gap: 40px;
-max-width: 1800px;
+max-width: 2000px;
 width: 100%;
 margin: 0 auto;
 padding: 40px clamp(24px, 12vw, 220px);
@@ -67,7 +67,7 @@ max-width: 620px;
 flex: 1 1 420px;
 }
 .hero p.intro {
-font-size: 38px;
+font-size: clamp(30px, 2.4vw, 46px);
 font-weight: 800;
 line-height: 1.25;
 margin-bottom: 32px;
@@ -176,7 +176,7 @@ display: flex;
 align-items: flex-start;
 justify-content: space-between;
 gap: 60px;
-max-width: 1800px;
+max-width: 2000px;
 margin: 0 auto;
 padding: 18px clamp(24px, 12vw, 220px) 100px;
 flex-wrap: wrap;
@@ -224,7 +224,7 @@ padding-left: 16px;
 border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 .exp-section {
-max-width: 1800px;
+max-width: 2000px;
 margin: 0 auto;
 padding: 60px clamp(24px, 12vw, 220px) 120px;
 }
@@ -239,7 +239,7 @@ background: rgba(124, 58, 237, 0.15);
 border: 1px solid rgba(124, 58, 237, 0.4);
 border-radius: 8px;
 color: #e5e7eb;
-font-size: 21px;
+font-size: clamp(18px, 1.2vw, 25px);
 font-weight: 700;
 }
 .exp-content {
@@ -316,7 +316,7 @@ color: #9ca3af;
 font-size: 15px;
 }
 .skills-section {
-max-width: 1800px;
+max-width: 2000px;
 margin: 0 auto;
 padding: 60px clamp(24px, 12vw, 220px) 120px;
 overflow: hidden;
@@ -436,7 +436,7 @@ color: #e5e7eb;
 text-align: center;
 }
 .edu-section {
-max-width: 1800px;
+max-width: 2000px;
 margin: 0 auto;
 padding: 60px clamp(24px, 12vw, 220px) 120px;
 }
@@ -467,12 +467,12 @@ height: 28px;
 color: #a78bfa;
 }
 .contact-section {
-max-width: 1800px;
+max-width: 2000px;
 margin: 0 auto;
 padding: 60px clamp(24px, 12vw, 220px) 140px;
 }
 .section-title-left {
-font-size: 21px;
+font-size: clamp(18px, 1.2vw, 25px);
 font-weight: 700;
 color: #e5e7eb;
 padding: 14px 32px;
