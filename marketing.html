@@ -162,7 +162,7 @@ flex-wrap: wrap;
 }
 .project-phone {
 flex: 0 0 auto;
-width: 170px;
+width: clamp(170px, 21vw, 215px);
 border-radius: 22px;
 box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }
@@ -177,6 +177,7 @@ flex: 1 1 320px;
 max-width: 420px;
 display: grid;
 grid-template-columns: 1fr 1fr;
+align-content: start;
 gap: 16px;
 }
 .project-grid-3 img {
@@ -289,7 +290,6 @@ height: 24px;
 <div class="projects-list">
 
 <div class="project-block theme-3">
-<span class="project-tag">Réseaux sociaux</span>
 <div class="project-title-row">
 <img src="assets/projects/sakana/logo.png" alt="Logo Sakana Sport">
 <h2>Sakana Sport</h2>
