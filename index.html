@@ -285,6 +285,14 @@ background: rgba(255, 255, 255, 0.03);
 border: 1px solid rgba(255, 255, 255, 0.08);
 border-radius: 16px;
 padding: 24px 28px;
+text-decoration: none;
+color: inherit;
+transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.exp-card:hover {
+transform: scale(1.03);
+border-color: rgba(124, 58, 237, 0.5);
+background: rgba(255, 255, 255, 0.05);
 }
 .exp-logo {
 flex-shrink: 0;
@@ -295,7 +303,6 @@ background: #ffffff;
 display: flex;
 align-items: center;
 justify-content: center;
-text-decoration: none;
 padding: 10px;
 transition: transform 0.2s ease;
 }
@@ -304,7 +311,7 @@ width: 100%;
 height: 100%;
 object-fit: contain;
 }
-.exp-logo:hover {
+.exp-card:hover .exp-logo {
 transform: scale(1.1);
 }
 .exp-info .exp-date {
@@ -639,38 +646,38 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 </div>
 
 <div class="exp-list">
-<div class="exp-card">
-<a href="https://www.nalo.fr/" target="_blank" rel="noopener" class="exp-logo">
+<a href="https://www.nalo.fr/" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
 <img src="assets/logos/nalo.png" alt="Nalo">
-</a>
+</div>
 <div class="exp-info">
 <span class="exp-date">Décembre 2024 - Septembre 2025</span>
 <h3 class="exp-role">Chef de projet CRM &amp; Data</h3>
 <p class="exp-company">Nalo · Alternance</p>
 </div>
-</div>
-
-<div class="exp-card">
-<a href="https://vainkeurz.com/fr" target="_blank" rel="noopener" class="exp-logo">
-<img src="assets/logos/vainkeurz.png" alt="Vainkeurz">
 </a>
+
+<a href="https://vainkeurz.com/fr" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
+<img src="assets/logos/vainkeurz.png" alt="Vainkeurz">
+</div>
 <div class="exp-info">
 <span class="exp-date">Juin - Août 2024</span>
 <h3 class="exp-role">Assistant marketing &amp; Data</h3>
 <p class="exp-company">Vainkeurz · Mission freelance</p>
 </div>
-</div>
-
-<div class="exp-card">
-<a href="https://www.ellii.net/" target="_blank" rel="noopener" class="exp-logo">
-<img src="assets/logos/ellii.png" alt="Ellii">
 </a>
+
+<a href="https://www.ellii.net/" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
+<img src="assets/logos/ellii.png" alt="Ellii">
+</div>
 <div class="exp-info">
 <span class="exp-date">2022 - 2023</span>
 <h3 class="exp-role">Assistant développement commercial &amp; marketing</h3>
 <p class="exp-company">Ellii · Alternance</p>
 </div>
-</div>
+</a>
 </div>
 </div>
 </section>
@@ -757,49 +764,49 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 <div class="section-badge">Formations</div>
 </div>
 <div class="edu-list">
-<div class="exp-card">
-<a href="https://paris-em.fr/formations-alternance-marketing-digital-business/" target="_blank" rel="noopener" class="exp-logo">
+<a href="https://paris-em.fr/formations-alternance-marketing-digital-business/" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
 <img src="assets/logos/emcd.png" alt="EMCD">
-</a>
+</div>
 <div class="exp-info">
 <span class="exp-date">2023 - 2025</span>
 <h3 class="exp-role">Master de la stratégie digitale</h3>
 <p class="exp-company">EMCD</p>
 </div>
-</div>
-
-<div class="exp-card">
-<a href="https://www.udemy.com/" target="_blank" rel="noopener" class="exp-logo">
-<img src="assets/logos/udemy.png" alt="Udemy">
 </a>
+
+<a href="https://www.udemy.com/" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
+<img src="assets/logos/udemy.png" alt="Udemy">
+</div>
 <div class="exp-info">
 <span class="exp-date">2024</span>
 <h3 class="exp-role">Formation Google Ads &amp; Meta Ads</h3>
 <p class="exp-company">Udemy</p>
 </div>
-</div>
-
-<div class="exp-card">
-<a href="https://paris-em.fr/formations-alternance-marketing-digital-business/" target="_blank" rel="noopener" class="exp-logo">
-<img src="assets/logos/emcd.png" alt="EMCD">
 </a>
+
+<a href="https://paris-em.fr/formations-alternance-marketing-digital-business/" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
+<img src="assets/logos/emcd.png" alt="EMCD">
+</div>
 <div class="exp-info">
 <span class="exp-date">2022 - 2023</span>
 <h3 class="exp-role">Bachelor marketing digital</h3>
 <p class="exp-company">EMCD</p>
 </div>
-</div>
-
-<div class="exp-card">
-<a href="https://ecole-europeenne.com/" target="_blank" rel="noopener" class="exp-logo">
-<img src="assets/logos/ets.png" alt="ETS Ecole Européenne">
 </a>
+
+<a href="https://ecole-europeenne.com/" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
+<img src="assets/logos/ets.png" alt="ETS Ecole Européenne">
+</div>
 <div class="exp-info">
 <span class="exp-date">2020 - 2022</span>
 <h3 class="exp-role">BTS Gestion de la PME</h3>
 <p class="exp-company">ETS Ecole Européenne</p>
 </div>
-</div>
+</a>
 </div>
 </div>
 
@@ -808,25 +815,25 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 <div class="section-badge">Certifications</div>
 </div>
 <div class="edu-list">
-<div class="exp-card">
-<a href="https://skillshop.credential.net/274439bf-bfdc-4799-bb1c-f82839f2e745#acc.1O8XAw7R" target="_blank" rel="noopener" class="exp-logo">
+<a href="https://skillshop.credential.net/274439bf-bfdc-4799-bb1c-f82839f2e745#acc.1O8XAw7R" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
 <img src="assets/logos/ga4-original.png" alt="Google Analytics 4">
-</a>
+</div>
 <div class="exp-info">
 <h3 class="exp-role">Google Analytics 4</h3>
 <p class="exp-company">Google</p>
 </div>
-</div>
-
-<div class="exp-card">
-<a href="https://app-eu1.hubspot.com/academy/achievements/pwj1mk85/fr/1/ivan-honla-seigneur/inbound" target="_blank" rel="noopener" class="exp-logo">
-<img src="assets/logos/hubspot.png" alt="Hubspot">
 </a>
+
+<a href="https://app-eu1.hubspot.com/academy/achievements/pwj1mk85/fr/1/ivan-honla-seigneur/inbound" target="_blank" rel="noopener" class="exp-card">
+<div class="exp-logo">
+<img src="assets/logos/hubspot.png" alt="Hubspot">
+</div>
 <div class="exp-info">
 <h3 class="exp-role">Hubspot Inbound Marketing</h3>
 <p class="exp-company">Hubspot Academy</p>
 </div>
-</div>
+</a>
 </div>
 </div>
 </div>
