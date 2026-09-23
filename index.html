@@ -308,7 +308,6 @@ margin-bottom: 6px;
 margin: 0 0 4px;
 font-size: 19px;
 font-weight: 800;
-text-transform: uppercase;
 letter-spacing: 0.5px;
 }
 .exp-info .exp-company {
@@ -323,8 +322,9 @@ padding: 60px clamp(24px, 12vw, 220px) 120px;
 overflow: hidden;
 }
 .skills-marquee {
-overflow: hidden;
-padding-top: 16px;
+overflow-x: hidden;
+overflow-y: visible;
+padding: 16px 0;
 -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
@@ -349,14 +349,16 @@ transform: translateX(-50%);
 position: relative;
 flex: 0 0 auto;
 width: 150px;
-padding: 28px 16px;
+height: 150px;
+padding: 20px 16px;
 background: rgba(255, 255, 255, 0.03);
 border: 1px solid rgba(255, 255, 255, 0.08);
 border-radius: 14px;
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 14px;
+justify-content: center;
+gap: 12px;
 transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .skill-card::before {
@@ -662,7 +664,7 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 </a>
 <div class="exp-info">
 <span class="exp-date">2023 - 2025</span>
-<h3 class="exp-role">Master Manager de la Stratégie Digitale</h3>
+<h3 class="exp-role">Master Manager De La Stratégie Digitale</h3>
 <p class="exp-company">EMCD</p>
 </div>
 </div>
@@ -684,7 +686,7 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 </a>
 <div class="exp-info">
 <span class="exp-date">2022 - 2023</span>
-<h3 class="exp-role">Bachelor Marketing digital</h3>
+<h3 class="exp-role">Bachelor Marketing Digital</h3>
 <p class="exp-company">EMCD</p>
 </div>
 </div>
@@ -695,7 +697,7 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 </a>
 <div class="exp-info">
 <span class="exp-date">2020 - 2022</span>
-<h3 class="exp-role">BTS Gestion de la PME</h3>
+<h3 class="exp-role">BTS Gestion De La PME</h3>
 <p class="exp-company">ETS Ecole Européenne</p>
 </div>
 </div>
