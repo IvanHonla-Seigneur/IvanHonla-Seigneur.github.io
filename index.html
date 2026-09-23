@@ -187,7 +187,7 @@ max-width: 600px;
 }
 .about-text .kicker {
 color: #00f5a0;
-font-weight: 800;
+font-weight: 400;
 font-size: 28px;
 line-height: 1;
 margin-top: 0;
@@ -222,6 +222,96 @@ font-size: 14px;
 color: #e5e7eb;
 padding-left: 16px;
 border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+.exp-section {
+max-width: 1800px;
+margin: 0 auto;
+padding: 60px clamp(24px, 12vw, 220px) 120px;
+}
+.section-badge-wrap {
+display: flex;
+justify-content: center;
+margin-bottom: 60px;
+}
+.section-badge {
+padding: 10px 26px;
+background: rgba(124, 58, 237, 0.15);
+border: 1px solid rgba(124, 58, 237, 0.4);
+border-radius: 8px;
+color: #e5e7eb;
+font-size: 16px;
+}
+.exp-content {
+display: flex;
+gap: 60px;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+.exp-illustration {
+flex: 1 1 320px;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 320px;
+color: #6b7280;
+font-size: 14px;
+text-align: center;
+border: 1px dashed rgba(255, 255, 255, 0.15);
+border-radius: 16px;
+padding: 40px;
+}
+.exp-list {
+flex: 2 1 480px;
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+.exp-card {
+display: flex;
+align-items: center;
+gap: 20px;
+background: rgba(255, 255, 255, 0.03);
+border: 1px solid rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+padding: 24px 28px;
+}
+.exp-logo {
+flex-shrink: 0;
+width: 56px;
+height: 56px;
+border-radius: 12px;
+background: rgba(124, 58, 237, 0.15);
+border: 1px solid rgba(124, 58, 237, 0.3);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #a78bfa;
+font-size: 11px;
+text-align: center;
+text-decoration: none;
+transition: transform 0.2s ease;
+}
+.exp-logo:hover {
+transform: scale(1.1);
+}
+.exp-info .exp-date {
+display: block;
+color: #00f5a0;
+font-size: 14px;
+font-weight: 600;
+margin-bottom: 6px;
+}
+.exp-info .exp-role {
+margin: 0 0 4px;
+font-size: 19px;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+.exp-info .exp-company {
+margin: 0;
+color: #9ca3af;
+font-size: 15px;
 }
 </style>
 </head>
@@ -283,6 +373,38 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 <div class="about-image-row">
 <img src="assets/photo.jpg" alt="Photo d'Ivan Honla-Seigneur" class="about-image">
 <div class="about-label">À PROPOS DE MOI</div>
+</div>
+</section>
+
+<section id="experiences" class="exp-section">
+<div class="section-badge-wrap">
+<div class="section-badge">Expériences</div>
+</div>
+
+<div class="exp-content">
+<div class="exp-illustration">
+[Illustration à venir — envoie-moi l'animation ou l'image souhaitée]
+</div>
+
+<div class="exp-list">
+<div class="exp-card">
+<a href="#" target="_blank" rel="noopener" class="exp-logo">Logo</a>
+<div class="exp-info">
+<span class="exp-date">(Dates à venir)</span>
+<h3 class="exp-role">Poste à venir</h3>
+<p class="exp-company">Entreprise à venir</p>
+</div>
+</div>
+
+<div class="exp-card">
+<a href="#" target="_blank" rel="noopener" class="exp-logo">Logo</a>
+<div class="exp-info">
+<span class="exp-date">(Dates à venir)</span>
+<h3 class="exp-role">Poste à venir</h3>
+<p class="exp-company">Entreprise à venir</p>
+</div>
+</div>
+</div>
 </div>
 </section>
 
