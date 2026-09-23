@@ -315,6 +315,67 @@ margin: 0;
 color: #9ca3af;
 font-size: 15px;
 }
+.skills-section {
+max-width: 1800px;
+margin: 0 auto;
+padding: 60px clamp(24px, 12vw, 220px) 120px;
+overflow: hidden;
+}
+.skills-marquee {
+overflow: hidden;
+-webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.skills-track {
+display: flex;
+gap: 24px;
+width: max-content;
+animation: skills-scroll 24s linear infinite;
+}
+.skills-marquee:hover .skills-track {
+animation-play-state: paused;
+}
+@keyframes skills-scroll {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(-50%);
+}
+}
+.skill-card {
+flex: 0 0 auto;
+width: 150px;
+padding: 28px 16px;
+background: rgba(255, 255, 255, 0.03);
+border: 1px solid rgba(255, 255, 255, 0.08);
+border-radius: 14px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.skill-card:hover {
+border-color: #8b5cf6;
+transform: translateY(-4px);
+}
+.skill-icon {
+width: 48px;
+height: 48px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 800;
+font-size: 14px;
+color: #ffffff;
+}
+.skill-card .skill-name {
+font-size: 14px;
+color: #e5e7eb;
+text-align: center;
+}
 </style>
 </head>
 <body>
@@ -420,6 +481,81 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 <h3 class="exp-role">Assistant développement commercial &amp; marketing</h3>
 <p class="exp-company">Ellii · Alternance</p>
 </div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="competences" class="skills-section">
+<div class="section-badge-wrap">
+<div class="section-badge">Compétences</div>
+</div>
+
+<div class="skills-marquee">
+<div class="skills-track">
+<div class="skill-card">
+<div class="skill-icon" style="background:#F2C811;color:#111827;">Pbi</div>
+<span class="skill-name">Power BI</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#00618A;">SQL</div>
+<span class="skill-name">SQL</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#E8710A;">GA4</div>
+<span class="skill-name">Google Analytics 4</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#217346;">X</div>
+<span class="skill-name">Excel</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#FF7A59;">H</div>
+<span class="skill-name">Hubspot</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:linear-gradient(135deg,#00C4CC,#7D2AE8);">C</div>
+<span class="skill-name">Canva</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#10A37F;">GPT</div>
+<span class="skill-name">ChatGPT</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#D97757;">C</div>
+<span class="skill-name">Claude AI</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#F2C811;color:#111827;">Pbi</div>
+<span class="skill-name">Power BI</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#00618A;">SQL</div>
+<span class="skill-name">SQL</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#E8710A;">GA4</div>
+<span class="skill-name">Google Analytics 4</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#217346;">X</div>
+<span class="skill-name">Excel</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#FF7A59;">H</div>
+<span class="skill-name">Hubspot</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:linear-gradient(135deg,#00C4CC,#7D2AE8);">C</div>
+<span class="skill-name">Canva</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#10A37F;">GPT</div>
+<span class="skill-name">ChatGPT</span>
+</div>
+<div class="skill-card">
+<div class="skill-icon" style="background:#D97757;">C</div>
+<span class="skill-name">Claude AI</span>
 </div>
 </div>
 </div>
