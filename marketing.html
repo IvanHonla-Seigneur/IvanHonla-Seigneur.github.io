@@ -126,36 +126,65 @@ line-height: 1.75;
 color: rgba(255, 255, 255, 0.85);
 margin: 0 0 28px;
 }
-.project-visual {
-border: 1px dashed rgba(255, 255, 255, 0.35);
-border-radius: 16px;
-min-height: 260px;
+.project-gallery {
 display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-padding: 30px;
-font-size: 14px;
-color: rgba(255, 255, 255, 0.6);
-background: rgba(0, 0, 0, 0.15);
+flex-wrap: wrap;
+gap: 18px;
+margin-top: 8px;
 }
-.project-block.theme-1 {
-background: linear-gradient(135deg, #4c1d95, #7c3aed 55%, #db2777);
+.project-gallery img {
+width: 190px;
+height: 190px;
+object-fit: cover;
+border-radius: 14px;
+border: 2px solid rgba(255, 255, 255, 0.55);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+transition: transform 0.2s ease;
 }
-.project-block.theme-1 .project-tag {
-background: rgba(0, 0, 0, 0.25);
+.project-gallery img:hover {
+transform: scale(1.04);
 }
-.project-block.theme-2 {
-background: linear-gradient(135deg, #064e3b, #059669 55%, #34d399);
+.project-gallery img.wide {
+width: 260px;
+height: auto;
+object-fit: contain;
+background: #0b1220;
+padding: 4px;
 }
-.project-block.theme-2 .project-tag {
-background: rgba(0, 0, 0, 0.25);
+.project-sub {
+margin-top: 32px;
 }
-.project-block.theme-3 {
+.project-sub:first-of-type {
+margin-top: 0;
+}
+.project-sub h3 {
+margin: 0 0 10px;
+font-size: 18px;
+font-weight: 700;
+}
+.project-block.theme-sakana {
 background: linear-gradient(135deg, #7c2d12, #ea580c 55%, #fbbf24);
 }
-.project-block.theme-3 .project-tag {
+.project-block.theme-sakana .project-tag {
 background: rgba(0, 0, 0, 0.25);
+}
+.project-block.theme-ellii {
+background: linear-gradient(135deg, #0f766e, #2dd4bf 55%, #fbcfe8);
+}
+.project-block.theme-ellii .project-tag {
+background: rgba(0, 0, 0, 0.2);
+}
+.project-block.theme-vainkeurz {
+background: linear-gradient(135deg, #4c1d95, #7c3aed 55%, #db2777);
+}
+.project-block.theme-vainkeurz .project-tag {
+background: rgba(0, 0, 0, 0.25);
+}
+.project-block.theme-formation {
+background: linear-gradient(135deg, #0f172a, #1e293b 55%, #334155);
+}
+.project-block.theme-formation .project-tag {
+background: rgba(255, 255, 255, 0.1);
 }
 .site-footer {
 position: relative;
@@ -236,30 +265,65 @@ height: 24px;
 <div class="section-badge-wrap">
 <div class="section-badge">Mes réalisations Marketing</div>
 </div>
-<p>[Texte d'intro à remplacer : une ou deux phrases présentant cette sélection de projets marketing.]</p>
+<p>Sélection de visuels et de supports de communication conçus lors de mes missions et de ma formation en marketing digital.</p>
 </div>
 
 <div class="projects-list">
 
-<div class="project-block theme-1">
-<span class="project-tag">[Entreprise / mission]</span>
-<h2>[Titre du projet 1]</h2>
-<p>[Description à remplacer : objectif du projet, ce que tu as fait concrètement, les outils utilisés, les résultats obtenus.]</p>
-<div class="project-visual">[Visuel à venir — capture d'écran, maquette ou export de campagne]</div>
+<div class="project-block theme-sakana">
+<span class="project-tag">Réseaux sociaux</span>
+<h2>Sakana Sport</h2>
+<p>Conception de visuels modernes et dynamiques, basés sur les couleurs de la charte graphique, pour promouvoir les événements de l'entreprise en reflétant leur énergie et en renforçant l'appartenance des amateurs de basket à la communauté.</p>
+<div class="project-gallery">
+<img src="assets/projects/sakana-pls2.png" alt="Visuel Instagram PLS 2 - Sakana Sport">
+<img src="assets/projects/sakana-3x3.png" alt="Visuel tournoi 3x3 - Sakana Sport">
+<img src="assets/projects/sakana-tournoi.png" alt="Visuel tournoi 5x5 et 1vs1 - Sakana Sport">
+</div>
 </div>
 
-<div class="project-block theme-2">
-<span class="project-tag">[Entreprise / mission]</span>
-<h2>[Titre du projet 2]</h2>
-<p>[Description à remplacer : objectif du projet, ce que tu as fait concrètement, les outils utilisés, les résultats obtenus.]</p>
-<div class="project-visual">[Visuel à venir — capture d'écran, maquette ou export de campagne]</div>
+<div class="project-block theme-ellii">
+<span class="project-tag">Ellii · Alternance</span>
+<h2>Ellii</h2>
+<p>Réalisation de visuels dont un flyer pour présenter l'entreprise et un second pour informer les seniors sur des conseils santé. Pour capter l'attention de la cible et faciliter la compréhension, j'ai opté pour des visuels aux couleurs douces, en cohérence avec l'objectif de promouvoir la santé physique et mentale.</p>
+<div class="project-gallery">
+<img src="assets/projects/ellii-flyer.png" alt="Flyer de présentation - Ellii">
+<img src="assets/projects/ellii-conseil.png" alt="Flyer conseil bien-être - Ellii">
+</div>
 </div>
 
-<div class="project-block theme-3">
-<span class="project-tag">[Entreprise / mission]</span>
-<h2>[Titre du projet 3]</h2>
-<p>[Description à remplacer : objectif du projet, ce que tu as fait concrètement, les outils utilisés, les résultats obtenus.]</p>
-<div class="project-visual">[Visuel à venir — capture d'écran, maquette ou export de campagne]</div>
+<div class="project-block theme-vainkeurz">
+<span class="project-tag">Vainkeurz · Mission freelance</span>
+<h2>Vainkeurz</h2>
+<p>Création de visuels afin d'informer la communauté de la participation de l'entreprise à un événement, promouvoir un jeu concours et valoriser une collaboration BtoB avec une autre marque. Un design urbain et moderne a été pensé pour transmettre les messages clés à une cible jeune passionnée de pop culture.</p>
+<div class="project-gallery">
+<img src="assets/projects/vainkeurz-japan.png" alt="Visuel Japan Tours - Vainkeurz">
+<img src="assets/projects/vainkeurz-cuisine.png" alt="Visuel jeu concours cuisine - Vainkeurz">
+<img src="assets/projects/vainkeurz-expo.png" alt="Visuel Japan Expo - Vainkeurz">
+</div>
+</div>
+
+<div class="project-block theme-formation">
+<span class="project-tag">Projets réalisés en formation</span>
+<h2>Quelques projets réalisés en formation</h2>
+
+<div class="project-sub">
+<h3>Bose</h3>
+<p>Présentation de l'édition spéciale d'un produit à l'occasion de l'anniversaire de la marque.</p>
+<div class="project-gallery">
+<img src="assets/projects/formation-bose.png" alt="Visuel édition spéciale Bose 60 ans">
+</div>
+</div>
+
+<div class="project-sub">
+<h3>Landing page</h3>
+<p>Création d'une landing page de site internet pour une solution SaaS destinée aux petites entreprises.</p>
+<div class="project-gallery">
+<img class="wide" src="assets/projects/formation-landing1.png" alt="Landing page SaaS - section d'accueil">
+<img class="wide" src="assets/projects/formation-landing2.png" alt="Landing page SaaS - section fonctionnalités">
+<img class="wide" src="assets/projects/formation-landing3.png" alt="Landing page SaaS - témoignages clients">
+</div>
+</div>
+
 </div>
 
 </div>
