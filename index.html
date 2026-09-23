@@ -554,6 +554,21 @@ transition: color 0.2s ease;
 .contact-row:hover span {
 color: #a78bfa;
 }
+.site-footer {
+border-top: 1px solid rgba(255, 255, 255, 0.08);
+padding: 28px clamp(24px, 12vw, 220px);
+max-width: 2000px;
+margin: 0 auto;
+}
+.site-footer p {
+margin: 0;
+font-size: 15px;
+color: #e5e7eb;
+}
+.site-footer .footer-name {
+color: #00f5a0;
+font-weight: 600;
+}
 .scroll-top-btn {
 position: fixed;
 right: 30px;
@@ -610,7 +625,7 @@ height: 24px;
 <div class="hero">
 <p class="intro">
 Bonjour,<br>
-Je suis <span class="nom">Ivan HONLA-SEIGNEUR</span>, spécialiste en <span class="metier">Data <span class="amp">&amp;</span> Marketing</span>.
+Je suis <span class="nom">Ivan HONLA SEIGNEUR</span>, spécialiste en <span class="metier">Data <span class="amp">&amp;</span> Marketing</span>.
 </p>
 
 <div class="actions-hero">
@@ -649,7 +664,7 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 </div>
 
 <div class="about-image-row">
-<img src="assets/photo.jpg" alt="Photo d'Ivan Honla-Seigneur" class="about-image">
+<img src="assets/photo.jpg" alt="Photo d'Ivan Honla Seigneur" class="about-image">
 <div class="about-label">À PROPOS DE MOI</div>
 </div>
 </section>
@@ -964,6 +979,10 @@ ta personnalité et ce qui te passionne dans le Marketing &amp; la Data.]
 </div>
 </div>
 </section>
+
+<footer class="site-footer">
+<p>&copy; Développé par <span class="footer-name">Ivan HONLA SEIGNEUR</span></p>
+</footer>
 
 <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Retour en haut de la page">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
