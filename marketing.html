@@ -156,39 +156,35 @@ display: block;
 }
 .project-media {
 display: flex;
-gap: 20px;
-align-items: stretch;
+gap: 24px;
+align-items: flex-start;
 flex-wrap: wrap;
 }
 .project-phone {
 flex: 0 0 auto;
 width: 170px;
 border-radius: 22px;
-overflow: hidden;
 box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }
 .project-phone img {
 width: 100%;
-height: 100%;
-object-fit: cover;
+height: auto;
 display: block;
+border-radius: 22px;
 }
 .project-grid-3 {
 flex: 1 1 320px;
+max-width: 420px;
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
 gap: 16px;
 }
 .project-grid-3 img {
 width: 100%;
-height: 100%;
+aspect-ratio: 1 / 1;
 object-fit: cover;
 border-radius: 14px;
 box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
-}
-.project-grid-3 .g-tall {
-grid-row: span 2;
 }
 .project-block.theme-1 {
 background: linear-gradient(135deg, #4c1d95, #7c3aed 55%, #db2777);
@@ -305,7 +301,7 @@ height: 24px;
 </div>
 <div class="project-grid-3">
 <img src="assets/projects/sakana/pls2.png" alt="Visuel Instagram PLS 2 - Sakana Sport">
-<img class="g-tall" src="assets/projects/sakana/3x3.png" alt="Visuel tournoi 3x3 - Sakana Sport">
+<img src="assets/projects/sakana/3x3.png" alt="Visuel tournoi 3x3 - Sakana Sport">
 <img src="assets/projects/sakana/tournoi5x5.png" alt="Visuel tournoi 5x5 et 1vs1 - Sakana Sport">
 </div>
 </div>
