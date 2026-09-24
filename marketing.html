@@ -152,6 +152,7 @@ width: 40px;
 height: 40px;
 border-radius: 10px;
 display: block;
+object-fit: contain;
 }
 .project-media {
 display: flex;
@@ -195,11 +196,24 @@ background: linear-gradient(135deg, #4c1d95, #7c3aed 55%, #db2777);
 .project-block.theme-1 .project-tag {
 background: rgba(0, 0, 0, 0.25);
 }
-.project-block.theme-2 {
-background: linear-gradient(135deg, #064e3b, #059669 55%, #34d399);
+.project-block.theme-ellii {
+background: linear-gradient(135deg, #0f766e, #2dd4bf 55%, #fbcfe8);
 }
-.project-block.theme-2 .project-tag {
-background: rgba(0, 0, 0, 0.25);
+.project-block.theme-ellii .project-tag {
+background: rgba(0, 0, 0, 0.2);
+}
+.project-block.theme-ellii .project-phone {
+width: auto;
+}
+.project-block.theme-ellii .project-phone img {
+width: auto;
+height: clamp(220px, 26vw, 300px);
+}
+.project-block.theme-ellii .project-single img {
+width: auto;
+height: clamp(220px, 26vw, 300px);
+aspect-ratio: auto;
+object-fit: contain;
 }
 .project-block.theme-3 {
 background: linear-gradient(135deg, #7c2d12, #ea580c 55%, #fbbf24);
@@ -311,11 +325,23 @@ height: 24px;
 </div>
 </div>
 
-<div class="project-block theme-2">
-<span class="project-tag">[Entreprise / mission]</span>
-<h2>[Titre du projet 2]</h2>
-<p>[Description à remplacer : objectif du projet, ce que tu as fait concrètement, les outils utilisés, les résultats obtenus.]</p>
-<div class="project-visual">[Visuel à venir — capture d'écran, maquette ou export de campagne]</div>
+<div class="project-block theme-ellii">
+<div class="project-title-row">
+<img src="assets/projects/ellii/logo.png" alt="Logo Ellii">
+<h2>Ellii</h2>
+</div>
+<p>[Description à venir]</p>
+<div class="project-media">
+<div class="project-phone">
+<img src="assets/projects/ellii/phone-mockup.png" alt="Mockup du profil Instagram Ellii">
+</div>
+<div class="project-single">
+<img src="assets/projects/ellii/flyer.png" alt="Flyer de présentation de la plateforme - Ellii">
+</div>
+<div class="project-single">
+<img src="assets/projects/ellii/affiche.png" alt="Affiche conseil bien-être - Ellii">
+</div>
+</div>
 </div>
 
 <div class="project-block theme-3">
