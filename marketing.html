@@ -157,7 +157,7 @@ display: block;
 .project-media {
 display: flex;
 gap: 24px;
-align-items: flex-start;
+align-items: stretch;
 flex-wrap: wrap;
 }
 .project-phone {
@@ -176,12 +176,12 @@ flex: 1 1 320px;
 max-width: 420px;
 display: grid;
 grid-template-columns: 1fr 1fr;
-align-content: start;
+grid-template-rows: 1fr 1fr;
 gap: 16px;
 }
 .project-grid-3 img {
 width: 100%;
-aspect-ratio: 1 / 1;
+height: 100%;
 object-fit: cover;
 border-radius: 14px;
 box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
