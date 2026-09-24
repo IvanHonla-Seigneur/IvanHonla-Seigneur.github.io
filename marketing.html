@@ -207,9 +207,17 @@ background: rgba(0, 0, 0, 0.2);
 }
 .project-block.theme-ellii .project-single img {
 width: auto;
-height: clamp(200px, 25vw, 280px);
 aspect-ratio: auto;
 object-fit: contain;
+}
+.project-block.theme-ellii .project-single.flyer img {
+height: clamp(339px, 41.8vw, 428px);
+}
+.project-block.theme-ellii .project-single.affiche img {
+height: clamp(100px, 15vw, 175px);
+}
+.project-block.theme-ellii .project-media {
+gap: 16px;
 }
 .project-block.theme-3 {
 background: linear-gradient(135deg, #7c2d12, #ea580c 55%, #fbbf24);
@@ -331,10 +339,10 @@ height: 24px;
 <div class="project-phone">
 <img src="assets/projects/ellii/phone-mockup.png" alt="Mockup du profil Instagram Ellii">
 </div>
-<div class="project-single">
+<div class="project-single flyer">
 <img src="assets/projects/ellii/flyer.png" alt="Flyer de présentation de la plateforme - Ellii">
 </div>
-<div class="project-single">
+<div class="project-single affiche">
 <img src="assets/projects/ellii/affiche.png" alt="Affiche conseil bien-être - Ellii">
 </div>
 </div>
