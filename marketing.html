@@ -171,16 +171,20 @@ height: auto;
 display: block;
 border-radius: 22px;
 }
-.project-grid-3 {
+.project-stack {
 flex: 0 0 auto;
-width: min(clamp(341px, 42.1vw, 431px), 100%);
-display: grid;
-grid-template-columns: 1fr 1fr;
+display: flex;
+flex-direction: column;
 gap: 16px;
 }
-.project-grid-3 img {
-width: 100%;
-aspect-ratio: 1 / 1;
+.project-single {
+flex: 0 0 auto;
+}
+.project-stack img,
+.project-single img {
+display: block;
+width: clamp(163px, calc(21.05vw - 8px), 208px);
+height: clamp(163px, calc(21.05vw - 8px), 208px);
 object-fit: cover;
 border-radius: 14px;
 box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
@@ -297,10 +301,12 @@ height: 24px;
 <div class="project-phone">
 <img src="assets/projects/sakana/phone-mockup.png" alt="Mockup du profil Instagram Sakana Sport">
 </div>
-<div class="project-grid-3">
+<div class="project-stack">
 <img src="assets/projects/sakana/pls2.png" alt="Visuel Instagram PLS 2 - Sakana Sport">
-<img src="assets/projects/sakana/3x3.png" alt="Visuel tournoi 3x3 - Sakana Sport">
 <img src="assets/projects/sakana/tournoi5x5.png" alt="Visuel tournoi 5x5 et 1vs1 - Sakana Sport">
+</div>
+<div class="project-single">
+<img src="assets/projects/sakana/3x3.png" alt="Visuel tournoi 3x3 - Sakana Sport">
 </div>
 </div>
 </div>
