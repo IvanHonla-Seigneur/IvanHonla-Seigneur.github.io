@@ -244,6 +244,63 @@ background: linear-gradient(135deg, #7c2d12, #ea580c 55%, #fbbf24);
 .project-block.theme-3 .project-tag {
 background: rgba(0, 0, 0, 0.25);
 }
+.project-block.theme-nalo {
+background: linear-gradient(135deg, #0d1b1c, #1c3a3d 55%, #e16f2c);
+}
+.project-block.theme-nalo .project-tag {
+background: rgba(0, 0, 0, 0.3);
+}
+.project-block.theme-nalo .project-title-row img {
+width: auto;
+height: 36px;
+}
+.project-browser {
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+background: #ffffff;
+}
+.browser-bar {
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 12px 16px;
+background: #e5e7eb;
+}
+.browser-bar .dot {
+width: 11px;
+height: 11px;
+border-radius: 50%;
+flex-shrink: 0;
+}
+.browser-bar .dot.red {
+background: #ff5f57;
+}
+.browser-bar .dot.yellow {
+background: #febc2e;
+}
+.browser-bar .dot.green {
+background: #28c840;
+}
+.browser-bar .browser-url {
+margin-left: 10px;
+background: #ffffff;
+border-radius: 6px;
+padding: 5px 14px;
+font-size: 13px;
+color: #374151;
+flex: 1;
+}
+.project-scroll-frame {
+height: clamp(420px, 45vw, 620px);
+overflow-y: auto;
+background: #ffffff;
+}
+.project-scroll-frame img {
+display: block;
+width: 100%;
+height: auto;
+}
 .site-footer {
 position: relative;
 border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -386,6 +443,24 @@ Retour à l'accueil
 </div>
 <div class="project-single ubereats">
 <img src="assets/projects/vainkeurz/ubereats.png" alt="Visuel collaboration Ubereats - Vainkeurz">
+</div>
+</div>
+</div>
+
+<div class="project-block theme-nalo">
+<div class="project-title-row">
+<img src="assets/projects/nalo/icon.png" alt="Logo Nalo">
+<h2>Nalo</h2>
+</div>
+<div class="project-browser">
+<div class="browser-bar">
+<span class="dot red"></span>
+<span class="dot yellow"></span>
+<span class="dot green"></span>
+<span class="browser-url">nalo.fr/newsletter-nalo</span>
+</div>
+<div class="project-scroll-frame">
+<img src="assets/projects/nalo/full-page-desktop.png" alt="Page newsletter Nalo, défilable">
 </div>
 </div>
 </div>
