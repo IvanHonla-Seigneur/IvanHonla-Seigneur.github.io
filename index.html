@@ -279,12 +279,28 @@ align-items: center;
 justify-content: center;
 min-height: 320px;
 padding: 40px;
+perspective: 1000px;
 }
 .exp-illustration img {
 width: 100%;
 max-width: 340px;
 height: auto;
 display: block;
+filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.55)) drop-shadow(0 10px 14px rgba(0, 0, 0, 0.4));
+transition: transform 0.15s ease-out;
+animation: illu-float 4s ease-in-out infinite;
+will-change: transform;
+}
+.exp-illustration img.tilting {
+animation: none;
+}
+@keyframes illu-float {
+0%, 100% {
+transform: translateY(0) rotateZ(0deg);
+}
+50% {
+transform: translateY(-14px) rotateZ(1.5deg);
+}
 }
 .exp-list {
 flex: 2 1 480px;
@@ -1047,6 +1063,24 @@ scrollTopBtn.classList.remove('visible');
 scrollTopBtn.addEventListener('click', () => {
 window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const expIllu = document.querySelector('.exp-illustration');
+const expIlluImg = expIllu ? expIllu.querySelector('img') : null;
+if (expIllu && expIlluImg) {
+expIllu.addEventListener('mouseenter', () => {
+expIlluImg.classList.add('tilting');
+});
+expIllu.addEventListener('mousemove', (e) => {
+const rect = expIllu.getBoundingClientRect();
+const x = (e.clientX - rect.left) / rect.width - 0.5;
+const y = (e.clientY - rect.top) / rect.height - 0.5;
+expIlluImg.style.transform = `perspective(800px) rotateY(${x * 30}deg) rotateX(${y * -30}deg) scale(1.1)`;
+});
+expIllu.addEventListener('mouseleave', () => {
+expIlluImg.classList.remove('tilting');
+expIlluImg.style.transform = '';
+});
+}
 </script>
 
 </body>
